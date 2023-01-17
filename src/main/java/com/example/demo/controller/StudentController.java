@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class StudentController {
 
     @Autowired
-    StudentService studentServiceImpl;
+    private StudentService studentServiceImpl;
 
     @PostMapping("/student")
     public PostStudentResponseDto createStudent(@RequestBody PostStudentRequestDto requestDto){
